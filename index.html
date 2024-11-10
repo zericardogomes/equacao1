@@ -1,14 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script src="script.c"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8" />
-
+    <title>Simulação de Código C</title>
   </head>
   <body>
     <main>
+      <h1>Simulação de Código em C</h1>
+      <pre id="code">
+#include &lt;stdio.h&gt;
+
+int main(){
+    int a, b, R;
+    printf("Digite um número");
+    scanf("%d", &a);
+
+    printf("Digite um número");
+    scanf("%d", &b);
+
+    R = 2 * (a + b);
+    printf("Resultado: %d", R);        
+    return(0);
+}
+      </pre>
+      <div>
+        <label for="numA">Digite um número (a):</label>
+        <input type="number" id="numA" />
+      </div>
+      <div>
+        <label for="numB">Digite um número (b):</label>
+        <input type="number" id="numB" />
+      </div>
+      <button onclick="simularCodigoC()">Executar Código</button>
+      <h2>Resultado:</h2>
+      <pre id="resultado"></pre>
     </main>
-    <script src="script.c"></script>
+
+    <script src="script.js"></script>
   </body>
 </html>
