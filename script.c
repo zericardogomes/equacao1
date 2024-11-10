@@ -1,0 +1,1 @@
+printf("Digite um número")
